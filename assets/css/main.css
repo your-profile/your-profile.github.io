@@ -2055,7 +2055,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.5;
+			opacity: 0.1;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3219,3 +3219,7 @@ input, select, textarea {
 			}
 
 	}
+	/* .image:before,
+.image.fit:before {
+    background: none !important;
+} */

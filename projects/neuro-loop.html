@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEURO-LOOP (Coming Soon) | Julia Santaniello</title>
+  <meta name="description" content="NEURO-LOOP: brain-computer interfaces for human-in-the-loop reinforcement learning." />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-nav__brand" href="../index.html">Julia Santaniello</a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../projects.html" aria-current="page">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="../projects.html">← All projects</a>
+
+    <header class="project-hero">
+      <div class="project-hero__text">
+        <div class="project-meta">
+          <span class="chip">BCI</span>
+          <span class="chip">Reinforcement Learning</span>
+          <span class="chip">HRI</span>
+        </div>
+        <h1>NEURO-LOOP (Coming Soon)</h1>
+        <p class="project-hero__subtitle">Brain-computer interfaces for human-in-the-loop RL</p>
+        <p>
+          NEURO-LOOP is a reinforcement learning framework that integrates implicit neural
+          feedback into robotic and artificial agent policy learning. In this iteration, we
+          explore using a hybrid fNIRS-EEG system to train the agent in a real-time loop. Further, we
+          classify multiple brain states and signals to further improve the agent's performance.
+        </p>
+      </div>
+      <div class="project-hero__media">
+        <img src="../images/Diagram.jpg" alt="Diagram of the NEURO-LOOP framework" />
+      </div>
+    </header>
+
+    <div class="project-body">
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Previous work used passive neural activity as a supervisory signal to enable agents to adapt its behavior to a user’s
+          expectations as they naturally observe the agent’s behavior. Current work explores using a hybrid fNIRS-EEG system 
+          classify performance, preference, error and attentional states to further improve a robotic agent's performance.
+        </p>
+        <p>
+          We (will) release a dataset of fNIRS and EEG data collected from the human-robot interaction, consisting of the 
+          learning statistics of the robot, and the brain data of the human. Finally, we apply this framework in real-time
+          to assess performance.
+        </p>
+      </section>
+
+      <section>
+        <h2>Focus</h2>
+        <p>
+          This work focuses on how to reliably use various biological signals to update the 
+          policy of a robotic agent by using real-time brain-computer interface (BCI) data.
+        </p>
+        <p>
+          (Currently under development)
+        </p>
+      </section> 
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Julia Santaniello</span>
+    <span>Tufts University · MuLIP Lab</span>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

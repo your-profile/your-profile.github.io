@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mapping fNIRS to Agent Performance | Julia Santaniello</title>
+  <meta name="description" content="Mapping fNIRS signals to agent performance toward reinforcement learning from neural feedback." />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-nav__brand" href="../index.html">Julia Santaniello</a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../projects.html" aria-current="page">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="../projects.html">← All projects</a>
+
+    <header class="project-hero">
+      <div class="project-hero__text">
+        <div class="project-meta">
+          <span class="chip">fNIRS</span>
+          <span class="chip">Neural Feedback</span>
+          <span class="chip">RL</span>
+        </div>
+        <h1>Mapping fNIRS to Agent Performance</h1>
+        <p class="project-hero__subtitle">Towards reinforcement learning from neural feedback</p>
+        <p>
+          This project investigates the relationship between passive neural signals (fNIRS)
+          and artificial agent performance. We ask whether implicit hemodynamic responses
+          can identify how well an agent is performing and act as feedback for a human-in-the-loop reinforcement learning agent.
+        </p>
+      </div>
+      <div class="project-hero__media">
+        <img src="../images/fulls/fNIRS.png" alt="fNIRS and agent performance study figure" />
+      </div>
+    </header>
+
+    <div class="project-body">
+      <section>
+        <h2>Overview</h2>
+        <p>
+          We analyze correlations between hemodynamic response in the prefrontal cortex (PFC)
+          and agent behavior. If a user’s neural activity can track whether an
+          agent is performing well, we can use those signals to support
+          human-in-the-loop reinforcement learning without explicit demonstration or guidance.
+        </p>
+        <p>
+          The work connects cognitive neuroscience sensing (fNIRS) with RL from human feedback
+          ideas, introducing the idea that RL policies may be shaped by implicit fNIRS data.
+        </p>
+      </section>
+
+      <section>
+        <h2>Publications &amp; materials</h2>
+        <ul class="resource-list">
+          <li>
+            <a href="https://arxiv.org/abs/2506.12636" target="_blank" rel="noopener noreferrer">
+              RLDM 2025: Extended Abstract
+              <span>arXiv →</span>
+            </a>
+          </li>
+          <li>
+            <a href="../images/RLDMPOSTER.pdf" target="_blank" rel="noopener noreferrer">
+              RLDM 2025: Poster
+              <span>PDF →</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2511.12844" target="_blank" rel="noopener noreferrer">
+              AAAI 2026: Full Paper
+              <span>arXiv →</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Julia Santaniello</span>
+    <span>Tufts University · MuLIP Lab</span>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

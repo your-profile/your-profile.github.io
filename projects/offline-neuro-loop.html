@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offline NEURO-LOOP | Julia Santaniello</title>
+  <meta name="description" content="NEURO-LOOP: brain-computer interfaces for human-in-the-loop reinforcement learning." />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-nav__brand" href="../index.html">Julia Santaniello</a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../projects.html" aria-current="page">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="../projects.html">← All projects</a>
+
+    <header class="project-hero">
+      <div class="project-hero__text">
+        <div class="project-meta">
+          <span class="chip">fNIRS</span>
+          <span class="chip">Reinforcement Learning</span>
+          <span class="chip">HRI</span>
+        </div>
+        <h1>Offline NEURO-LOOP</h1>
+        <p class="project-hero__subtitle">Brain-computer interfaces for human-in-the-loop RL</p>
+        <p>
+          NEURO-LOOP is a reinforcement learning framework that integrates implicit neural
+          feedback into robotic and artificial agent policy learning. It pulls from 
+          previous work by usinga person’s brain signals and an agent’s behavior 
+          without requiring explicit guidance. Offline NEURO-LOOP uses fNIRS data 
+          from a dataset instead of a real-time loop.
+        </p>
+      </div>
+      <div class="project-hero__media">
+        <img src="../images/fulls/Framework.jpg" alt="Diagram of the NEURO-LOOP framework" />
+      </div>
+    </header>
+
+    <div class="project-body">
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Traditional interactive RL often depends on overt feedback such as ratings,
+          demonstrations, or button presses. Instead, NEURO-LOOP treats passive neural
+          activity as a supervisory signal. This enables agents to adapt its behaviorto a user’s
+          expectations as they naturally observe the agent’s behavior.
+        </p>
+        <p>
+          The offline NEURO-LOOP framework uses fNIRS data from a dataset, exploring
+          how to interpret neural state and how to update the policy to align with human intent outside
+          of a real-time loop.
+        </p>
+      </section>
+
+      <section>
+        <h2>Focus</h2>
+        <p>
+          This work focuses on how to reliably use fNIRS signals to update the 
+          policy of a robotic or artificial agent by using offline data from a dataset.
+        </p>
+      </section> 
+      
+      <section>
+        <h2>Publications &amp; materials</h2>
+        <ul class="resource-list">
+          <li>
+            <a href="https://arxiv.org/html/2607.14393" target="_blank" rel="noopener noreferrer">
+              IROS 2026: Workshop Paper
+              <span>arXiv →</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="../images/RLDMPOSTER.pdf" target="_blank" rel="noopener noreferrer">
+              RLDM 2025: Poster
+              <span>PDF →</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="" target="_blank" rel="noopener noreferrer">
+              UNDER REVIEW 2027: Full Paper (TBA)
+              <span>arXiv →</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Julia Santaniello</span>
+    <span>Tufts University · MuLIP Lab</span>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

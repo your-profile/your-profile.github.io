@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpheroHunter | Julia Santaniello</title>
+  <meta name="description" content="SpheroHunter: tracking a Sphero with a LoCoBot despite occlusions in a maze." />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="site-nav__brand" href="../index.html">Julia Santaniello</a>
+    <ul class="site-nav__links">
+      <li><a href="../index.html">About</a></li>
+      <li><a href="../projects.html" aria-current="page">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <a class="back-link" href="../projects.html">← All projects</a>
+
+    <header class="project-hero">
+      <div class="project-hero__text">
+        <div class="project-meta">
+          <span class="chip">Robotics</span>
+          <span class="chip">Tracking</span>
+          <span class="chip">Occlusion</span>
+        </div>
+        <h1>SpheroHunter</h1>
+        <p class="project-hero__subtitle">Tracking down Sphero with occlusions</p>
+        <p>
+          We designed an algorithm that lets a LoCoBot track and follow a Sphero by
+          predicting where it is, even when walls and the maze structure hide it from view.
+        </p>
+      </div>
+      <div class="project-hero__media">
+        <video controls playsinline poster="../images/fulls/SpheroHunter.jpg">
+          <source src="../images/fulls/spherohunter.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
+
+    <div class="project-body">
+      <section>
+        <h2>Overview</h2>
+        <p>
+          Occlusion is a common failure for visual tracking in cluttered spaces.
+          SpheroHunter focuses on maintaining an estimate of the Sphero’s location
+          despite when the target cannot be seen. It then recovers its pursuit when the target
+          is located in the camera’s field of view.
+        </p>
+        <p>
+          The system was developed in a maze environment where the Sphero can move out of
+          sight behind obstacles, requiring prediction rather than purely reactive following.
+        </p>
+      </section>
+
+      <section>
+        <h2>Demo</h2>
+        <div class="project-hero__media">
+          <img src="../images/fulls/spherohuntergif.GIF" alt="Animated demo of SpheroHunter tracking" />
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Julia Santaniello</span>
+    <span>Tufts University · MuLIP Lab</span>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

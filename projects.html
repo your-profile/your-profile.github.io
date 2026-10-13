@@ -8,78 +8,72 @@
   <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <a class="site-nav__brand" href="index.html">Julia Santaniello</a>
-    <ul class="site-nav__links">
-      <li><a href="index.html">About</a></li>
-      <li><a href="projects.html" aria-current="page">Projects</a></li>
-    </ul>
-  </nav>
+  <header class="top">
+    <a class="top__name" href="index.html">Julia Santaniello</a>
+    <nav aria-label="Primary">
+      <a href="index.html">About</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+    </nav>
+  </header>
 
-  <main class="page">
-    <header class="page-header">
-      <span class="section__label">Research</span>
+  <main class="wrap">
+    <header class="page-intro">
       <h1>Projects</h1>
       <p>
-        Work spanning brain-computer interfaces, human-in-the-loop reinforcement learning,
-        and robot perception. Click a project to read more.
+        Brain-computer interfaces, human-in-the-loop reinforcement learning, and a bit of robot tracking.
+        Open a project for the writeup and papers.
       </p>
     </header>
 
-    <div class="project-grid">
-      <a class="project-card" href="projects/offline-neuro-loop.html">
-        <div class="project-card__media">
-          <img src="images/fulls/Framework.jpg" alt="NEURO-LOOP framework overview" />
-        </div>
-        <div class="project-card__body">
-          <span class="project-card__tag">BCI · RL</span>
-          <h2>Offline NEURO-LOOP</h2>
-          <p>
-            A reinforcement learning framework that integrates implicit neural feedback
-            into robot policy learning from an offline dataset.
-          </p>
-          <span class="project-card__cta">View project →</span>
-        </div>
-      </a>
+    <a class="entry" href="projects/offline-neuro-loop.html">
+      <img src="images/fulls/Framework.jpg" alt="Diagram of the offline NEURO-LOOP framework" />
+      <div>
+        <h2>Offline NEURO-LOOP</h2>
+        <p class="kicker">fNIRS, reinforcement learning</p>
+        <p>
+          A reinforcement learning framework that folds implicit neural feedback into
+          robot policy learning, using an offline dataset rather than a live loop.
+        </p>
+      </div>
+    </a>
 
-      <a class="project-card" href="projects/fnirs-mapping.html">
-        <div class="project-card__media">
-          <img src="images/fulls/fNIRS.png" alt="fNIRS experimental setup visualization" />
-        </div>
-        <div class="project-card__body">
-          <span class="project-card__tag">fNIRS · RL</span>
-          <h2>Mapping fNIRS to Agent Performance</h2>
-          <p>
-            Investigating whether passive prefrontal fNIRS signals can serve as feedback
-            for aligning agent policies with user expectations.
-          </p>
-          <span class="project-card__cta">View project →</span>
-        </div>
-      </a>
+    <a class="entry entry--flip" href="projects/fnirs-mapping.html">
+      <img src="images/fulls/fNIRS.png" alt="Figure from the fNIRS and agent performance study" />
+      <div>
+        <h2>Mapping fNIRS to Agent Performance</h2>
+        <p class="kicker">RLDM 2025, AAAI 2026</p>
+        <p>
+          Whether passive prefrontal fNIRS can track how well an agent is doing,
+          and whether that signal is usable as feedback.
+        </p>
+      </div>
+    </a>
 
-      <a class="project-card" href="projects/spherohunter.html">
-        <div class="project-card__media">
-          <img src="images/fulls/SpheroHunter.jpg" alt="LoCoBot tracking a Sphero robot" />
-        </div>
-        <div class="project-card__body">
-          <span class="project-card__tag">Robotics</span>
-          <h2>SpheroHunter</h2>
-          <p>
-            Predicting a Sphero’s location through occlusions so a LoCoBot can track and
-            follow it through a maze.
-          </p>
-          <span class="project-card__cta">View project →</span>
-        </div>
-      </a>
-    </div>
+    <a class="entry" href="projects/spherohunter.html">
+      <img src="images/fulls/SpheroHunter.jpg" alt="LoCoBot tracking a Sphero" />
+      <div>
+        <h2>SpheroHunter</h2>
+        <p class="kicker">Robotics</p>
+        <p>
+          A LoCoBot follows a Sphero through a maze by guessing where it went
+          when the walls hide it.
+        </p>
+      </div>
+    </a>
+
+    <a class="entry entry--stack" href="projects/neuro-loop.html">
+      <div>
+        <h2>NEURO-LOOP <span class="soon">in progress</span></h2>
+        <p class="kicker">Hybrid fNIRS–EEG, real time</p>
+        <p>
+          The live version of the loop: multimodal biosignals used to update a
+          robot policy while a person is watching.
+        </p>
+      </div>
+      <img src="images/Diagram.jpg" alt="Early diagram of the real-time NEURO-LOOP setup" />
+    </a>
   </main>
 
-  <footer class="site-footer">
-    <span>© <span id="year"></span> Julia Santaniello</span>
-    <span>Tufts University · MuLIP Lab</span>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="colophon">Tufts University · MuLIP Lab</footer>
 </body>
 </html>

@@ -3,44 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Julia Santaniello | PhD Candidate, Tufts University</title>
-  <meta name="description" content="Julia Santaniello is a Computer Science & HRI PhD candidate at Tufts University researching brain-computer interfaces and human-in-the-loop reinforcement learning." />
+  <title>Julia Santaniello</title>
+  <meta name="description" content="Julia Santaniello is a Computer Science and HRI PhD candidate at Tufts University, working on brain-computer interfaces and human-in-the-loop reinforcement learning." />
   <link rel="stylesheet" href="assets/css/site.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <a class="site-nav__brand" href="index.html">Julia Santaniello</a>
-    <ul class="site-nav__links">
-      <li><a href="index.html" aria-current="page">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-    </ul>
-  </nav>
+  <header class="top">
+    <a class="top__name" href="index.html">Julia Santaniello</a>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-current="page">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
 
-  <main class="page page--home">
-    <aside class="identity">
-      <img class="identity__photo" src="images/profile-avatar.jpg" width="448" height="448" alt="Portrait of Julia Santaniello" />
-      <h1 class="identity__name">Julia Santaniello</h1>
-      <p class="identity__role">
-        Third-year CS &amp; HRI PhD candidate in the
-        <a href="https://mulip.cs.tufts.edu/index.html" target="_blank" rel="noopener noreferrer">MuLIP Lab</a>
-        at Tufts University
-      </p>
-      <div class="identity__actions">
-        <a class="btn btn--primary" href="images/JuliaCV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        <a class="btn btn--ghost" href="projects.html">Projects</a>
+  <main class="wrap">
+    <div class="intro">
+      <img class="intro__portrait" src="images/profile-avatar.jpg" width="448" height="448" alt="Portrait of Julia Santaniello" />
+      <div>
+        <h1>Julia Santaniello</h1>
+        <p class="role">
+          Third-year Computer Science &amp; HRI PhD candidate in the
+          <a href="https://mulip.cs.tufts.edu/index.html" target="_blank" rel="noopener noreferrer">MuLIP Lab</a>
+          at Tufts University.
+        </p>
+        <ul class="contact">
+          <li><a href="mailto:julia.santaniello@tufts.edu">julia.santaniello@tufts.edu</a></li>
+          <li><a href="https://www.linkedin.com/in/julia-r-santaniello/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="images/JuliaCV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+        </ul>
       </div>
-      <div class="identity__links">
-        <a href="mailto:julia.santaniello@tufts.edu">julia.santaniello@tufts.edu</a>
-        <a href="https://www.linkedin.com/in/julia-r-santaniello/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </aside>
+      <img class="intro__duck" src="images/duck.jpg" width="600" height="600" alt="Rubber duck" />
+    </div>
 
-    <div class="content-panel">
-      <section class="section" aria-labelledby="about-heading">
-        <span class="section__label">About</span>
-        <h2 id="about-heading" class="section__title">At the intersection of minds and machines</h2>
-        <p class="lead">
+    <div class="split">
+      <div class="prose">
+        <h2>What I work on</h2>
+        <p>
           My research sits at the intersection of machine learning, robotics, and cognitive science.
           At Tufts, I study how passive brain signals can support implicit human-in-the-loop
           reinforcement learning.
@@ -49,95 +48,74 @@
           Advised by Dr.&nbsp;Jivko Sinapov and Dr.&nbsp;Robert Jacob, I develop RL frameworks that
           align agent behavior with user goals and expectations through brain-computer interfaces (BCI).
         </p>
-        <ul class="interest-list" aria-label="Research interests">
-          <li>Human-Robot Interaction</li>
-          <li>Brain-Computer Interfaces</li>
-          <li>Reinforcement Learning</li>
-          <li>Cognitive Science</li>
-        </ul>
-      </section>
 
-      <section class="section" aria-labelledby="path-heading">
-        <span class="section__label">Background</span>
-        <h2 id="path-heading" class="section__title">Path to Tufts</h2>
-        <ul class="timeline">
+        <h2>Recent projects</h2>
+        <ul class="work-list">
           <li>
-            <span class="timeline__year">2022–</span>
-            <p class="timeline__body">
-              Joined Tufts as a Computer Science post-baccalaureate / Master’s student. As a DREAM Fellow,
-              I began working in robotics and RL with Dr.&nbsp;Sinapov’s lab, where I am now a PhD candidate.
-            </p>
+            <a href="projects/offline-neuro-loop.html">
+              <img src="images/fulls/Framework.jpg" alt="" />
+              <div>
+                <h3>Offline NEURO-LOOP</h3>
+                <p>Brain signals for human-in-the-loop RL from an offline dataset.</p>
+              </div>
+            </a>
           </li>
           <li>
-            <span class="timeline__year">2021</span>
-            <p class="timeline__body">
-              Computational biology research intern at Michigan State University with Dr.&nbsp;Arjun Krishnan.
-            </p>
+            <a href="projects/fnirs-mapping.html">
+              <img src="images/fulls/fNIRS.png" alt="" />
+              <div>
+                <h3>Mapping fNIRS to Agent Performance</h3>
+                <p>Towards reinforcement learning from neural feedback.</p>
+              </div>
+            </a>
           </li>
           <li>
-            <span class="timeline__year">2018–22</span>
-            <p class="timeline__body">
-              B.S. in Neuroscience, Lafayette College. Undergraduate researcher in the BCI lab advised by
-              Dr.&nbsp;Lisa Gabel and Dr.&nbsp;Yih-Choung Yu.
-            </p>
+            <a href="projects/spherohunter.html">
+              <img src="images/fulls/SpheroHunter.jpg" alt="" />
+              <div>
+                <h3>SpheroHunter</h3>
+                <p>Tracking under occlusion in maze environments.</p>
+              </div>
+            </a>
           </li>
         </ul>
-      </section>
 
-      <section class="section" aria-labelledby="highlights-heading">
-        <span class="section__label">Selected work</span>
-        <h2 id="highlights-heading" class="section__title">Recent projects</h2>
-        <div class="featured-projects">
-          <a class="featured-link" href="projects/offline-neuro-loop.html">
-            <img src="images/fulls/Framework.jpg" alt="" />
-            <div>
-              <h3>Offline NEURO-LOOP</h3>
-              <p>Brain signals for human-in-the-loop RL from an offline dataset</p>
-            </div>
-            <span class="featured-link__arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="featured-link" href="projects/fnirs-mapping.html">
-            <img src="images/fulls/fNIRS.png" alt="" />
-            <div>
-              <h3>Mapping fNIRS to Agent Performance</h3>
-              <p>Towards reinforcement learning from neural feedback</p>
-            </div>
-            <span class="featured-link__arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="featured-link" href="projects/spherohunter.html">
-            <img src="images/fulls/SpheroHunter.jpg" alt="" />
-            <div>
-              <h3>SpheroHunter</h3>
-              <p>Tracking under occlusion in maze environments</p>
-            </div>
-            <span class="featured-link__arrow" aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
+        <h2>In progress</h2>
+        <ul class="work-list">
+          <li>
+            <a href="projects/neuro-loop.html">
+              <img src="images/Diagram.jpg" alt="" />
+              <div>
+                <h3>NEURO-LOOP <span class="soon">coming soon</span></h3>
+                <p>Multimodal biosignals for human-in-the-loop RL in real time.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      <section class="section" aria-labelledby="highlights-heading">
-        <span class="section__label">Current work</span>
-        <h2 id="highlights-heading" class="section__title">Upcoming projects</h2>
-        <div class="featured-projects">
-          <a class="featured-link" href="projects/neuro-loop.html">
-            <img src="images/Diagram.jpg" alt="" />
-            <div>
-              <h3>NEURO-LOOP</h3>
-              <p>Multimodal biosignals for human-in-the-loop RL in real-time</p>
-            </div>
-            <span class="featured-link__arrow" aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
+      <aside class="side">
+        <h2>Before the PhD</h2>
+        <ul class="years">
+          <li>
+            <strong>2022–</strong>
+            Joined Tufts as a Computer Science post-baccalaureate / Master’s student. As a DREAM Fellow,
+            I started in robotics and RL with Dr.&nbsp;Sinapov’s lab.
+          </li>
+          <li>
+            <strong>2021</strong>
+            Computational biology research intern at Michigan State University with Dr.&nbsp;Arjun Krishnan.
+          </li>
+          <li>
+            <strong>2018–22</strong>
+            B.S. in Neuroscience, Lafayette College. Undergraduate researcher in the BCI lab with
+            Dr.&nbsp;Lisa Gabel and Dr.&nbsp;Yih-Choung Yu.
+          </li>
+        </ul>
+      </aside>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <span>© <span id="year"></span> Julia Santaniello</span>
-    <span>Tufts University · MuLIP Lab</span>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="colophon">Tufts University · MuLIP Lab</footer>
 </body>
 </html>

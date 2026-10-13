@@ -8,68 +8,45 @@
   <link rel="stylesheet" href="../assets/css/site.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <a class="site-nav__brand" href="../index.html">Julia Santaniello</a>
-    <ul class="site-nav__links">
-      <li><a href="../index.html">About</a></li>
-      <li><a href="../projects.html" aria-current="page">Projects</a></li>
-    </ul>
-  </nav>
+  <header class="top">
+    <a class="top__name" href="../index.html">Julia Santaniello</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">About</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+    </nav>
+  </header>
 
-  <main class="page">
-    <a class="back-link" href="../projects.html">← All projects</a>
+  <main class="wrap project">
+    <a class="back" href="../projects.html">All projects</a>
+    <h1>SpheroHunter</h1>
+    <p class="dek">Tracking down Sphero with occlusions</p>
 
-    <header class="project-hero">
-      <div class="project-hero__text">
-        <div class="project-meta">
-          <span class="chip">Robotics</span>
-          <span class="chip">Tracking</span>
-          <span class="chip">Occlusion</span>
-        </div>
-        <h1>SpheroHunter</h1>
-        <p class="project-hero__subtitle">Tracking down Sphero with occlusions</p>
-        <p>
-          We designed an algorithm that lets a LoCoBot track and follow a Sphero by
-          predicting where it is, even when walls and the maze structure hide it from view.
-        </p>
-      </div>
-      <div class="project-hero__media">
-        <video controls playsinline poster="../images/fulls/SpheroHunter.jpg">
-          <source src="../images/fulls/spherohunter.mp4" type="video/mp4" />
-        </video>
-      </div>
-    </header>
+    <div class="figure">
+      <video controls playsinline poster="../images/fulls/SpheroHunter.jpg">
+        <source src="../images/fulls/spherohunter.mp4" type="video/mp4" />
+      </video>
+    </div>
 
-    <div class="project-body">
-      <section>
-        <h2>Overview</h2>
-        <p>
-          Occlusion is a common failure for visual tracking in cluttered spaces.
-          SpheroHunter focuses on maintaining an estimate of the Sphero’s location
-          despite when the target cannot be seen. It then recovers its pursuit when the target
-          is located in the camera’s field of view.
-        </p>
-        <p>
-          The system was developed in a maze environment where the Sphero can move out of
-          sight behind obstacles, requiring prediction rather than purely reactive following.
-        </p>
-      </section>
+    <div class="copy">
+      <p>
+        We designed an algorithm that lets a LoCoBot track and follow a Sphero by
+        predicting where it is, even when walls and the maze structure hide it from view.
+      </p>
+      <p>
+        Occlusion is a common failure for visual tracking in cluttered spaces.
+        SpheroHunter keeps an estimate of the Sphero’s location when the target cannot be seen,
+        then picks the pursuit back up once it shows up in the camera again.
+        The maze is set up so the Sphero can slip behind obstacles, which forces prediction
+        instead of purely reactive following.
+      </p>
 
-      <section>
-        <h2>Demo</h2>
-        <div class="project-hero__media">
-          <img src="../images/fulls/spherohuntergif.GIF" alt="Animated demo of SpheroHunter tracking" />
-        </div>
-      </section>
+      <h2>Demo</h2>
+    </div>
+    <div class="figure">
+      <img src="../images/fulls/spherohuntergif.GIF" alt="Animated demo of SpheroHunter tracking" />
     </div>
   </main>
 
-  <footer class="site-footer">
-    <span>© <span id="year"></span> Julia Santaniello</span>
-    <span>Tufts University · MuLIP Lab</span>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="colophon">Tufts University · MuLIP Lab</footer>
 </body>
 </html>

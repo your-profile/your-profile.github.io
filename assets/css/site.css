@@ -399,6 +399,95 @@ p { margin: 0 0 1em; }
   font-style: italic;
 }
 
+/* publications */
+
+.pub-section {
+  margin: 0 0 2.4rem;
+  padding-top: 0.4rem;
+}
+
+.pub-section + .pub-section {
+  border-top: 1px solid var(--line);
+  padding-top: 1.8rem;
+}
+
+.pub-section h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.25em;
+}
+
+.pub-section:nth-of-type(1) h2 { color: var(--brick-deep); }
+.pub-section:nth-of-type(2) h2 { color: var(--blue-deep); }
+.pub-section:nth-of-type(3) h2 { color: var(--plum); }
+
+.pub-section__note {
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.pub-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: pub;
+}
+
+.pub-list li {
+  position: relative;
+  padding: 0 0 1.25rem 1.9rem;
+  margin: 0 0 0.35rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.pub-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pub-list li::before {
+  counter-increment: pub;
+  content: counter(pub) ".";
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 0.95rem;
+  color: var(--ochre-deep);
+}
+
+.pub-section:nth-of-type(2) .pub-list li::before { color: var(--blue); }
+.pub-section:nth-of-type(3) .pub-list li::before { color: var(--brick); }
+
+.pub-title {
+  margin: 0 0 0.35em;
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.pub-meta,
+.pub-venue {
+  margin: 0 0 0.25em;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.pub-venue em {
+  font-style: italic;
+  color: var(--sage-deep);
+}
+
+.pub-links {
+  margin: 0.45em 0 0;
+  font-size: 0.95rem;
+}
+
+.pub-tba {
+  color: var(--muted);
+  font-style: italic;
+}
+
 footer.colophon {
   width: min(100% - 2.4rem, var(--max));
   margin: 0 auto 2rem;
